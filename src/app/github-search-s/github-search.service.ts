@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 
 @Injectable({
@@ -10,16 +11,10 @@ export class GithubSearchService {
 
   constructor(private httpClient:HttpClient) { }
 
-  getUser(){
-    return this.httpClient.get('https://api.github.com/users/${this.username}');
+  public getProfile(searchQuery){
+    let dataURL = 'https://api.github.com/users/'
   }
 
-  getRepos(){
-    return this.httpClient.get('https://api.github.com/users/${this.username}/repos');
-  }
 
-  updateUsername(username: string){
-
-  }
 
 }
