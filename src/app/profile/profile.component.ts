@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubSearchService } from '../github-search-s/github-search.service';
-import { Profile } from '../../profile'
+import { Profile } from '../../profile';
 
 @Component({
   selector: 'app-profile',

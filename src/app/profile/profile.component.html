@@ -1,0 +1,24 @@
+<div class = "avatar">
+    <img src="{{profile.avatar_url}}" class="avatarimg" alt="image">
+</div>
+<div class="row2">
+ <div class="col-sm-6">
+
+    <div class="panel">Profile Name:{{profile.name}}</div>
+    <div class="panel"><a href="{{profile.url}}">Profile Url:{{profile.url}}</a></div>
+    <div class="panel">Profile Bio:{{profile.bio}}</div>
+    <div class="panel">Location:{{profile.location}}</div>
+</div>
+<div class="col-sm-6">
+    <label for="Repos"> Repos:{{profile.public_repos}}</label><br>
+    <label for="followers">Followers:{{profile.followers}}</label><br>
+    <label for="following">Following:{{profile.following}}</label>
+    <div class="label label-default">This account was created on {{profile.created_at}}</div>
+    <div class="label label-default">{{profile.created_at|joinDateCount}} days ago</div>
+
+ </div>
+</div>
+
+<div class="row3">
+<button class="component"><a routerLink='/component' routerLinkActive='active'>Go Back Home</a></button>
+</div>

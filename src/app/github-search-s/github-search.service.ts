@@ -29,7 +29,7 @@ export class GithubSearchService {
        public_repos:string;
        followers:number;
        following:number;
-       created_on:Date
+       created_at:Date
      }
 
      let promise = new Promise((resolve,reject)=>{
@@ -42,7 +42,7 @@ export class GithubSearchService {
         this.profile.public_repos=response.public_repos
         this.profile.followers=response.followers
         this.profile.following=response.following
-        this.profile.created_at=response.created_on
+        this.profile.created_at=response.created_at
 
        resolve()
        },
