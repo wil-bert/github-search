@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { GithubSearchService } from '../../app/github-search-s/github-search.service';
-import { Repo } from '../repo;
+import { Repo } from '../../repo';
 
 
 @Component({

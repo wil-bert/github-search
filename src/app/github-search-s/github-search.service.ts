@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
-import { Profile } from '';
-import { Repo } from '../../app/repo/repo.component';
+import { Profile } from '../../profile';
+import { Repo } from '../../repo';
 
 
 @Injectable({
@@ -15,7 +15,7 @@ export class GithubSearchService {
   repo: Repo;
 
   constructor(private http:HttpClient) {
-    this.profile = new Profile("","","","","",0,0,0,new Date());
+    this.profile = new Profile("","","","","","",0,0,new Date());
     this.repo = new Repo("","","");
     this.username = '';
    }
