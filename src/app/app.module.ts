@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentsComponent } from './components/components.component';
+import { RepoComponent } from './repo/repo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentsComponent
+    ComponentsComponent,
+    RepoComponent
   ],
   imports: [
     BrowserModule,
