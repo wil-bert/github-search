@@ -7,15 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComponentsComponent implements OnInit {
 
-  public githubUserQuery:string;
-
   constructor() { }
-
-  public searchUser(){
-
-  }
-
   ngOnInit(): void {
+    throw new Error("Method not implemented.");
   }
 
-}
+  }

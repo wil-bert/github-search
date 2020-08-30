@@ -1,43 +1,10 @@
-<div class="container mt-4">
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-hearder">
-                    <h3>Github Search</h3>
-                </div>
-                <div class="card-body">
-                    <form (submit)="searchUser()">
-                        <div class="form-group">
-                            <input [(ngModel)]="githubUserQuery" name="user" type="search" class="form-control">
-                        </div>
-                        <div>
-                            <input type="submit" value="search" class="btn btn-secondary ">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+<div class="container">
+    <h1>Welcome to Github-Search App</h1>
+    <p>This web-site allows you to search through github for people you are interested in or repositories that have caught your eye.Enjoy</p>
+    <div>
+      <button class="profile"><a routerLink='/profile' routerLinkActive='active'>search using profile name</a></button>
     </div>
-</div>
-
-<div class="container mt-4">
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-hearder">
-                    <h3>Github Search</h3>
-                </div>
-                <div class="card-body">
-                    <form (submit)="searchUser()">
-                        <div class="form-group">
-                            <input [(ngModel)]="githubUserQuery" name="user" type="search" class="form-control">
-                        </div>
-                        <div>
-                            <input type="submit" value="search" class="btn btn-secondary ">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <div>
+      <button class="repo"><a routerLink='/repo' routerLinkActive='active'>search using repository name</a></button>
     </div>
-</div>
+    </div>
