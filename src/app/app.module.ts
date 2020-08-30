@@ -7,12 +7,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentsComponent } from './components/components.component';
 import { RepoComponent } from './repo/repo.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentsComponent,
-    RepoComponent
+    RepoComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
