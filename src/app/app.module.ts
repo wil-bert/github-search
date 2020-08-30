@@ -8,13 +8,15 @@ import { ComponentsComponent } from './components/components.component';
 import { RepoComponent } from './repo/repo.component';
 import { ProfileComponent } from './profile/profile.component';
 import { GithubSearchService } from './github-search-s/github-search.service';
+import { RoutingComponent } from './routing/routing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentsComponent,
     RepoComponent,
-    ProfileComponent
+    ProfileComponent,
+    RoutingComponent
   ],
   imports: [
     BrowserModule,
