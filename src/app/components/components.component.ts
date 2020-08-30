@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComponentsComponent implements OnInit {
 
-  public githubUser:string;
+  public githubUserQueryf:string;
 
   constructor() { }
 
