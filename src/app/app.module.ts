@@ -8,6 +8,8 @@ import { ComponentsComponent } from './components/components.component';
 import { RepoComponent } from './repo/repo.component';
 import { ProfileComponent } from './profile/profile.component';
 import { GithubSearchService } from './github-search-s/github-search.service';
+import { HighlightDirective } from './highlight.directive';
+import { DateCountPipe } from './date-count.pipe'
 
 
 @NgModule({
@@ -16,14 +18,14 @@ import { GithubSearchService } from './github-search-s/github-search.service';
     ComponentsComponent,
     RepoComponent,
     ProfileComponent,
+    HighlightDirective,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-
-
 
   ],
   providers: [GithubSearchService],
