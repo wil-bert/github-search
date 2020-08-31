@@ -1,7 +1,5 @@
-<div class="container">
-    <ul class="bar">
-      <li>Git-hub Search</li>
-    </ul>
+<div class="container" style="background-color:lightgrey;">
+      <h3>Git-hub Search</h3>
     <!-- <ng-progress></ng-progress> -->
   <div class="form">
     <form (ngSubmit)='findProfile()' #searchForm='ngForm'>
@@ -10,7 +8,7 @@
         </div>
        </form>
   </div>
-  <h2 appHighlight>Profile Details</h2>
+  <h2 style="color: antiquewhite;" appHighlight>Profile Details</h2>
 
       <div class="row">
         <div class = "avatar">
@@ -35,7 +33,7 @@
            </div>
          </div>
 
-     <div class="row3">
+     <div class="row3" style="text-align: center;">
       <button class="components"><a routerLink='/components' routerLinkActive='active'>Go Back Home</a></button>
     </div>
 
