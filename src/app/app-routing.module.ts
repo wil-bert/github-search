@@ -1,20 +1,23 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
-
-import { RepoComponent } from './repo/repo.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ComponentsComponent } from './components/components.component';
+import { RepoComponent } from './repo/repo.component';
+
 
 const routes:Routes =[
   {path:"components",component:ComponentsComponent},
   {path:"profile",component:ProfileComponent},
   {path:"repo",component:RepoComponent},
-  {path:"",redirectTo:"/home",pathMatch:"full"}
+  {path:"",redirectTo:"/components",pathMatch:"full"}
 ]
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [CommonModule,RouterModule.forRoot(routes)],
+
+  exports: [RouterModule],
+  declarations: []
 })
 export class AppRoutingModule { }

@@ -15,7 +15,7 @@ export class GithubSearchService {
   repo: Repo;
 
   constructor(private http:HttpClient) {
-    this.profile = new Profile("","","","","","",0,0,new Date());
+    this.profile = new Profile("","","","","",0,0,0,new Date());
     this.repo = new Repo("","","");
     this.username = '';
    }
@@ -26,7 +26,7 @@ export class GithubSearchService {
        url:string;
        bio:string;
        location:string;
-       public_repos:string;
+       public_repos:number;
        followers:number;
        following:number;
        created_at:Date
